@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY subscriber.py .
 
-CMD ["python", "subscriber.py"]
+CMD ["python", "-u", "subscriber.py"]
