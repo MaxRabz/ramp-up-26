@@ -1,5 +1,7 @@
+# syntax=docker/dockerfile:1.5
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3-slim
+ARG TARGETPLATFORM
+FROM --platform=$TARGETPLATFORM python:3-slim
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE=1
