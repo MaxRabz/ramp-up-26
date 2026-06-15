@@ -1,0 +1,6 @@
+services:
+  booklibrary:
+    image: booklibrary
+    build:
+      context: .
+      dockerfile: ./Dockerfile
